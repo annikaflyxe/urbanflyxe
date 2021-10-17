@@ -40,11 +40,6 @@ nav ul li:hover {
   animation-duration: 1s;
 }
 
-article > img:hover {
-  animation-name: bounce2;
-  animation-duration: 1s;
-}
-
 a:hover {
   color: black;
   animation-name: bounce2;
@@ -138,15 +133,24 @@ footer a {
     color: black;
     text-decoration: none;
     font-size: 19px;
-    padding: 27px;
+    padding: 20px;
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 420px) {
   nav ul li a {
     color: black;
     text-decoration: none;
     font-size: 17px;
-    padding: 27px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 380px) {
+  nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 7px;
   }
 }
