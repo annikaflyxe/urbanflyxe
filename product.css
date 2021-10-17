@@ -1,0 +1,102 @@
+.product-options {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 10px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Necklace"
+    "Rings"
+    "Bracelets"
+    "Earrings"
+    "Cufflings";
+}
+
+.product-options {
+  text-align: center;
+  line-height: 6vw;
+  margin-top: 50px;
+}
+
+.product-options a {
+  text-decoration: none;
+  color: white;
+  font-size: 26px;
+}
+
+.Necklace {
+  grid-area: Necklace;
+  margin: 5px 90px;
+}
+
+.Rings {
+  grid-area: Rings;
+  margin: 5px 90px;
+}
+
+.Bracelets {
+  grid-area: Bracelets;
+  margin: 5px 90px;
+}
+
+.Earrings {
+  grid-area: Earrings;
+  margin: 5px 90px;
+}
+
+.Cufflings {
+  grid-area: Cufflings;
+  margin: 5px 90px;
+}
+
+.Necklace,
+.Bracelets,
+.Cufflings,
+.Rings,
+.Earrings {
+  background-color: rgb(180, 189, 180);
+  border-radius: 1px;
+}
+
+.Necklace:hover,
+.Bracelets:hover,
+.Cufflings:hover,
+.Earrings:hover,
+.Rings:hover {
+  animation-name: bounce2;
+  animation-duration: 1s;
+  background-color: rgb(159, 170, 159);
+}
+
+@keyframes bounce2 {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-9px);
+  }
+}
+
+@media (max-width: 790px) {
+  .Necklace,
+  .Bracelets,
+  .Cufflings,
+  .Earrings,
+  .Rings {
+    padding: 10px;
+    margin: 5px 120px;
+  }
+  .product-options a {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .Necklace,
+  .Bracelets,
+  .Cufflings,
+  .Earrings,
+  .Rings {
+    margin: 2px 60px;
+  }
+}

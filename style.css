@@ -1,0 +1,134 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+header,
+nav,
+footer {
+  grid-column: 1 / -1;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Nav stuff */
+
+nav .logo {
+  font-size: 8vw;
+  text-align: center;
+  padding-top: 20px;
+  font-family: freight-big-pro, serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+nav .logo a {
+  text-decoration: none;
+  color: black;
+}
+
+nav .logo:hover {
+  animation-name: bounce2;
+  animation-duration: 1s;
+}
+
+nav ul li:hover {
+  animation-name: bounce2;
+  animation-duration: 1s;
+}
+
+article > img:hover {
+  animation-name: bounce2;
+  animation-duration: 1s;
+}
+
+a:hover {
+  color: black;
+  animation-name: bounce2;
+  animation-duration: 1s;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes bounce2 {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes slide-up-fade-in {
+  0% {
+    opacity: 0.5;
+    transform: translate(0px, 190px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0px, 0px);
+  }
+}
+
+nav ul {
+  text-align: center;
+  list-style: none;
+  padding-top: 10px;
+  padding-right: 30px;
+  font-family: freight-big-pro, serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 22px;
+  padding: 27px;
+}
+
+body {
+  padding: 2rem;
+  background-color: rgb(252, 252, 252);
+}
+
+main {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  text-align: center;
+  padding-top: 20px;
+  font-family: freight-big-pro, serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+}
+
+footer a {
+  color: black;
+  padding: 10px;
+}
